@@ -1,0 +1,22 @@
+<html>
+
+
+<head>
+<script>
+		var today = new Date();
+		 var expiry = new Date(today.getTime() + 30 * 24 * 3600 * 1000);
+		function setCookie(name, value)
+		{document.cookie=name + "=" + value + "; path=/;"};
+		document.title = "Injection";
+</script>
+</head>
+<body onload="setCookie('itzik', 'itzik')">
+
+
+
+<form name="input" method="post" >
+Username: <input type="text" name="user">
+<input type="submit" value="Submit"">
+</form>
+</body>
+</html>
